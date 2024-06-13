@@ -50,6 +50,9 @@
 		4390A4592031D58A00E1CD80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390A4582031D58A00E1CD80 /* Constants.swift */; };
 		43A8036F203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */; };
 		43B95CEC2059716B00E8C016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */; };
+		786F492E2C1BBB590042F281 /* LogInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F492D2C1BBB590042F281 /* LogInScreen.swift */; };
+		786F49302C1BBC8E0042F281 /* RestaurantsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F492F2C1BBC8E0042F281 /* RestaurantsListScreen.swift */; };
+		786F49322C1BBD7B0042F281 /* RestaurantScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F49312C1BBD7B0042F281 /* RestaurantScreen.swift */; };
 		787FBD782BF0B07000872EFE /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBD772BF0B07000872EFE /* OrderMEUITests.swift */; };
 		787FBD7A2BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */; };
 		A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
@@ -117,6 +120,9 @@
 		4390A4582031D58A00E1CD80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessibilityIdentifiers.swift; path = Model/AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = View/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		786F492D2C1BBB590042F281 /* LogInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreen.swift; sourceTree = "<group>"; };
+		786F492F2C1BBC8E0042F281 /* RestaurantsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListScreen.swift; sourceTree = "<group>"; };
+		786F49312C1BBD7B0042F281 /* RestaurantScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantScreen.swift; sourceTree = "<group>"; };
 		787FBD752BF0B07000872EFE /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787FBD772BF0B07000872EFE /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -283,9 +289,20 @@
 			name = JsonTransforms;
 			sourceTree = "<group>";
 		};
+		786F492C2C1BBB4A0042F281 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				786F492D2C1BBB590042F281 /* LogInScreen.swift */,
+				786F492F2C1BBC8E0042F281 /* RestaurantsListScreen.swift */,
+				786F49312C1BBD7B0042F281 /* RestaurantScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		787FBD762BF0B07000872EFE /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				786F492C2C1BBB4A0042F281 /* Screens */,
 				787FBD772BF0B07000872EFE /* OrderMEUITests.swift */,
 				787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */,
 			);
@@ -470,7 +487,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786F49302C1BBC8E0042F281 /* RestaurantsListScreen.swift in Sources */,
 				787FBD782BF0B07000872EFE /* OrderMEUITests.swift in Sources */,
+				786F49322C1BBD7B0042F281 /* RestaurantScreen.swift in Sources */,
+				786F492E2C1BBB590042F281 /* LogInScreen.swift in Sources */,
 				787FBD7A2BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

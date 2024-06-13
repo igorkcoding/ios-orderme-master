@@ -27,34 +27,18 @@ final class OrderMEUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-        let loginLaterButton = app.buttons["loginLaterButton"]
-        loginLaterButton.tap()
         
-        let republiqueRestaurnat = app.staticTexts["Republique"]
-        republiqueRestaurnat.tap()
+        let loginScreen = LogInScreen()
+        loginScreen.loginLater()
         
-        let detectTableOption = app.collectionViews.staticTexts["Detect table"]
-        detectTableOption.tap()
+        let restaurantListScreen = RestaurantsListScreen()
+        restaurantListScreen.openRepubliqueRestaurant()
         
-        let tableNumber = app.textFields["tableNumberTextField"]
-        tableNumber.tap()
-        tableNumber.typeText("3")
-        let selectTableButton = app.buttons["Select table"]
-        selectTableButton.tap()
+        let restaurantScreen = RestaurantScreen()
+        restaurantScreen.callRestaurant()
         
-        let callWaiterOption = app.collectionViews.staticTexts["Call a waiter"]
-        callWaiterOption.tap()
-        
-        let waiterAlert = app.alerts["The waiter is on his way"]
-        let bringMenuButton = waiterAlert.buttons["Bring a menu"]
-        bringMenuButton.tap()
-        
-        let gotItAlert = app.alerts["Got it!"]
-        XCTAssert(gotItAlert.waitForExistence(timeout: 2) ,"Got it alert not present")
-        
-        let okButton = gotItAlert.buttons["OK"]
-        okButton.tap()
-        
+        XCTAssert(restaurantScreen.callAlert.waitForExistence(timeout: 2) ,"Call alert is not present")
+      
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
