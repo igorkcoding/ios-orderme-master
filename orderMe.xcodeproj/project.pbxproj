@@ -53,6 +53,8 @@
 		786F492E2C1BBB590042F281 /* LogInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F492D2C1BBB590042F281 /* LogInScreen.swift */; };
 		786F49302C1BBC8E0042F281 /* RestaurantsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F492F2C1BBC8E0042F281 /* RestaurantsListScreen.swift */; };
 		786F49322C1BBD7B0042F281 /* RestaurantScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F49312C1BBD7B0042F281 /* RestaurantScreen.swift */; };
+		786F49342C1BC2630042F281 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F49332C1BC2630042F281 /* BaseScreen.swift */; };
+		786F49362C1BC2FC0042F281 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F49352C1BC2FC0042F281 /* BaseTest.swift */; };
 		787FBD782BF0B07000872EFE /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBD772BF0B07000872EFE /* OrderMEUITests.swift */; };
 		787FBD7A2BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */; };
 		A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
@@ -123,6 +125,8 @@
 		786F492D2C1BBB590042F281 /* LogInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreen.swift; sourceTree = "<group>"; };
 		786F492F2C1BBC8E0042F281 /* RestaurantsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListScreen.swift; sourceTree = "<group>"; };
 		786F49312C1BBD7B0042F281 /* RestaurantScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantScreen.swift; sourceTree = "<group>"; };
+		786F49332C1BC2630042F281 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		786F49352C1BC2FC0042F281 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		787FBD752BF0B07000872EFE /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787FBD772BF0B07000872EFE /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -295,6 +299,7 @@
 				786F492D2C1BBB590042F281 /* LogInScreen.swift */,
 				786F492F2C1BBC8E0042F281 /* RestaurantsListScreen.swift */,
 				786F49312C1BBD7B0042F281 /* RestaurantScreen.swift */,
+				786F49332C1BC2630042F281 /* BaseScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				786F492C2C1BBB4A0042F281 /* Screens */,
 				787FBD772BF0B07000872EFE /* OrderMEUITests.swift */,
 				787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */,
+				786F49352C1BC2FC0042F281 /* BaseTest.swift */,
 			);
 			path = OrderMEUITests;
 			sourceTree = "<group>";
@@ -489,8 +495,10 @@
 			files = (
 				786F49302C1BBC8E0042F281 /* RestaurantsListScreen.swift in Sources */,
 				787FBD782BF0B07000872EFE /* OrderMEUITests.swift in Sources */,
+				786F49342C1BC2630042F281 /* BaseScreen.swift in Sources */,
 				786F49322C1BBD7B0042F281 /* RestaurantScreen.swift in Sources */,
 				786F492E2C1BBB590042F281 /* LogInScreen.swift in Sources */,
+				786F49362C1BC2FC0042F281 /* BaseTest.swift in Sources */,
 				787FBD7A2BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,7 @@
 
 import XCTest
 
-class RestaurantsListScreen{
-    static let app = XCUIApplication()
+class RestaurantsListScreen: BaseScreen{
     
     private let republiqueRest: XCUIElement = app.staticTexts["Republique"]
     
