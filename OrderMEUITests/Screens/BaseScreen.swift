@@ -11,4 +11,6 @@ import XCTest
 class BaseScreen{
       
     static let app = XCUIApplication()
+    
+    let vivibleTimeout: TimeInterval = 2.0
 }

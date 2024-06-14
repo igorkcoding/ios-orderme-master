@@ -18,19 +18,16 @@ final class OrderMEUITests: BaseTest {
         // UI tests must launch the application that they test.
         
         let loginScreen = LogInScreen()
-        loginScreen.loginLater()
-        
-        let restaurantListScreen = RestaurantsListScreen()
-        restaurantListScreen.openRepubliqueRestaurant()
-        
-        let restaurantScreen = RestaurantScreen()
+       
+        let restaurantListScreen =  loginScreen.loginLater()
+       
+        let restaurantScreen =  restaurantListScreen.openRepubliqueRestaurant()
         restaurantScreen.callRestaurant()
         
         XCTAssert(restaurantScreen.callAlert.waitForExistence(timeout: 2) ,"Call alert is not present")
       
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.

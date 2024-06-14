@@ -12,7 +12,24 @@ class LogInScreen: BaseScreen{
     
     private let loginButton: XCUIElement = app.buttons["loginLaterButton"]
     
-    public func loginLater(){
+// When you create instance of the LogiInScreen we call initializer, which checks the presense of the button visible(), this is how we know we are on the LogInScreen
+    override init() {
+        super.init()
+        visible()
+    }
+    public func loginLater() -> RestaurantsListScreen{
         loginButton.tap()
+        return RestaurantsListScreen()
+   //Returns an object of the RestaurantsListScreen()
+    }
+}
+//Extending functionality of our LogInScreen class
+extension LogInScreen{
+    
+    func visible(){
+        guard loginButton.waitForExistence(timeout: vivibleTimeout)else{
+            XCTFail("Login screen is not present")
+            return
+        }
     }
 }
