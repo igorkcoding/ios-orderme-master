@@ -57,6 +57,8 @@
 		786F49362C1BC2FC0042F281 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F49352C1BC2FC0042F281 /* BaseTest.swift */; };
 		787FBD782BF0B07000872EFE /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBD772BF0B07000872EFE /* OrderMEUITests.swift */; };
 		787FBD7A2BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */; };
+		78B415702C1E66FC00866AFA /* MyReservationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B4156F2C1E66FC00866AFA /* MyReservationsScreen.swift */; };
+		78B415732C1E677900866AFA /* TabBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B415722C1E677900866AFA /* TabBarProtocol.swift */; };
 		A7140EFD2A96C57A007FF2D6 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = A7140EFC2A96C57A007FF2D6 /* ObjectMapper */; };
 		A7140F172A96CB16007FF2D6 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F162A96CB16007FF2D6 /* AlamofireImage */; };
 		A7140F1A2A96CB4F007FF2D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F192A96CB4F007FF2D6 /* Alamofire */; };
@@ -130,6 +132,8 @@
 		787FBD752BF0B07000872EFE /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787FBD772BF0B07000872EFE /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78B4156F2C1E66FC00866AFA /* MyReservationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsScreen.swift; sourceTree = "<group>"; };
+		78B415722C1E677900866AFA /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -300,6 +304,7 @@
 				786F492F2C1BBC8E0042F281 /* RestaurantsListScreen.swift */,
 				786F49312C1BBD7B0042F281 /* RestaurantScreen.swift */,
 				786F49332C1BC2630042F281 /* BaseScreen.swift */,
+				78B4156F2C1E66FC00866AFA /* MyReservationsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -307,12 +312,21 @@
 		787FBD762BF0B07000872EFE /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				78B415712C1E676100866AFA /* Utils */,
 				786F492C2C1BBB4A0042F281 /* Screens */,
 				787FBD772BF0B07000872EFE /* OrderMEUITests.swift */,
 				787FBD792BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift */,
 				786F49352C1BC2FC0042F281 /* BaseTest.swift */,
 			);
 			path = OrderMEUITests;
+			sourceTree = "<group>";
+		};
+		78B415712C1E676100866AFA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				78B415722C1E677900866AFA /* TabBarProtocol.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		ED4E7941F9C50F3BEA03680F /* Frameworks */ = {
@@ -493,12 +507,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B415702C1E66FC00866AFA /* MyReservationsScreen.swift in Sources */,
 				786F49302C1BBC8E0042F281 /* RestaurantsListScreen.swift in Sources */,
 				787FBD782BF0B07000872EFE /* OrderMEUITests.swift in Sources */,
 				786F49342C1BC2630042F281 /* BaseScreen.swift in Sources */,
 				786F49322C1BBD7B0042F281 /* RestaurantScreen.swift in Sources */,
 				786F492E2C1BBB590042F281 /* LogInScreen.swift in Sources */,
 				786F49362C1BC2FC0042F281 /* BaseTest.swift in Sources */,
+				78B415732C1E677900866AFA /* TabBarProtocol.swift in Sources */,
 				787FBD7A2BF0B07000872EFE /* OrderMEUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,6 +26,19 @@ final class OrderMEUITests: BaseTest {
         restaurantScreen.choose(option: .callRestaurant)
         
         XCTAssert(restaurantScreen.callAlert.waitForExistence(timeout: 2) ,"Call alert is not present")
+        
+        
+        func testVerifyMyReservationsTabIsRestricted(){
+            let loginScreen = LogInScreen()
+           
+            let restaurantListScreen =  loginScreen.loginLater()
+            let myReservationsScreen = restaurantListScreen.tapMyReservations()
+            XCTAssert(myReservationsScreen.youDidNotLoginAlert.waitForExistence(timeout: 2.0), "You did not login alert is not present")
+            
+        }
+        
+        
+        
       
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
