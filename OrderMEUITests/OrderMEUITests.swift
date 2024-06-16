@@ -23,6 +23,7 @@ final class OrderMEUITests: BaseTest {
        
         let restaurantScreen =  restaurantListScreen.openRepubliqueRestaurant()
         restaurantScreen.callRestaurant()
+        restaurantScreen.choose(option: .callRestaurant)
         
         XCTAssert(restaurantScreen.callAlert.waitForExistence(timeout: 2) ,"Call alert is not present")
       

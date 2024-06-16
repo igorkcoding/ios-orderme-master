@@ -15,7 +15,8 @@ class RestaurantsListScreen: BaseScreen{
     override init() {
         super.init()
         visible()
-    }    
+    }  
+    
     public func openRepubliqueRestaurant() -> RestaurantScreen{
         republiqueRest.tap()
         return RestaurantScreen()
